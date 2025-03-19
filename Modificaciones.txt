@@ -17,5 +17,6 @@ Modificando el saldo y numero de cuenta:
 	¿Se cierra el programa inesperadamente? No
 	¿Los errores están bien nombrados (nombres descriptivos, salidas descriptivas...) Sí
 	¿Orden de los catch correcto? Sí
+	¿Flujo del Programa? Correcto
 	
 	
