@@ -19,7 +19,7 @@ public class TransferenciaServicio {
 
             if (cuentaDestino < 1000) {
                 throw new ErrorDeTransferenciaException("Número de cuenta inválido: " + cuentaDestino);
-            }else {
+            }else { //nuevo añadido 
             	archivo.write("Transferencia de " + cantidad + " a la cuenta " + cuentaDestino + "\n"); //ahora solo se escribe en el log las transferencias hacia las cuentas correctas.
 			}
 
