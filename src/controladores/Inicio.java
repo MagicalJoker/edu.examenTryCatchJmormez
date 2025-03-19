@@ -31,6 +31,7 @@ public class Inicio {
         } finally {
             System.out.println("Operación de transferencia finalizada.");
         }
+        //Orden de los catch correcto. De más específico a más genérico.
     }
 }
 
