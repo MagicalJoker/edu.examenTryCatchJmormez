@@ -1,10 +1,14 @@
 
 1.-
-	Líneas 26-27 del servicio TransferenciaServicio.java: 
+	Líneas 28-29 del servicio TransferenciaServicio.java: 
 		Se captura una excepción y se lanza otra diferente. 
 		
 2.- 
 	Clase inicio. Uso de System.err.println en vez de System.out.println
+	
+3.-
+	Lineas 22-24 del servicio TransferenciaServicio.java:
+		Se escribía siempre en el Log toda inteción de transferencia, aunque la cuenta sea no válida. Se ha añadido un else al if existente para que solo se escriba en el Log las transferencias hacia las cuentas válidas.
 	
 
 COMPROBACIONES: 

@@ -15,11 +15,13 @@ public class TransferenciaServicio {
         }
 
         try (FileWriter archivo = new FileWriter("transferencias.log", true)) {
-            archivo.write("Transferencia de " + cantidad + " a la cuenta " + cuentaDestino + "\n");
+            //archivo.write("Transferencia de " + cantidad + " a la cuenta " + cuentaDestino + "\n"); //se va a escribir en el Log siempre aunque la cuenta no exista. 
 
             if (cuentaDestino < 1000) {
                 throw new ErrorDeTransferenciaException("Número de cuenta inválido: " + cuentaDestino);
-            }
+            }else {
+            	archivo.write("Transferencia de " + cantidad + " a la cuenta " + cuentaDestino + "\n"); //ahora solo se escribe en el log las transferencias hacia las cuentas correctas.
+			}
 
             saldo -= cantidad;
             System.out.println("Transferencia exitosa. Nuevo saldo: " + saldo);
