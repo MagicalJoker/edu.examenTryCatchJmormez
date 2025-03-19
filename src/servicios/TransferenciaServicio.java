@@ -9,7 +9,7 @@ import java.io.IOException;
 public class TransferenciaServicio {
     private double saldo = 500.0;
 
-    public void procesarTransferencia(double cantidad, double cuentaDestino) throws SaldoInsuficienteException, ErrorDeTransferenciaException, IOException, RuntimeException{
+    public void procesarTransferencia(double cantidad, double cuentaDestino) throws SaldoInsuficienteException, ErrorDeTransferenciaException, IOException, RuntimeException{ //añadir 2 exceptions restantes
         if (cantidad > saldo) {
             throw new SaldoInsuficienteException("Saldo insuficiente para transferir " + cantidad);
         }
