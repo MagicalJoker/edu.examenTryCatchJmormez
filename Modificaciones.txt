@@ -3,4 +3,13 @@
 	Líneas 26-27 del servicio TransferenciaServicio.java: 
 		Se captura una excepción y se lanza otra diferente. 
 		
-		
+2.- 
+	Clase inicio. Uso de System.err.println en vez de System.out.println
+	
+
+COMPROBACIONES: 
+Modificando el saldo y numero de cuenta:
+	
+	¿Se cierra el programa inesperadamente? No
+	¿Los errores están bien nombrados (nombres descriptivos, salidas descriptivas...) Sí
+	

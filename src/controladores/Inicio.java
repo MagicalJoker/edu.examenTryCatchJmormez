@@ -21,13 +21,13 @@ public class Inicio {
         TransferenciaServicio servicio = new TransferenciaServicio();
 
         try {
-            servicio.procesarTransferencia(1000, 2000);
+            servicio.procesarTransferencia(1000, 5000);
         } catch (SaldoInsuficienteException e) {
-            System.out.println("Fondos insuficientes: " + e.getMessage());
+            System.err.println("Fondos insuficientes: " + e.getMessage());
         } catch (ErrorDeTransferenciaException e) {
-            System.out.println("Error en la transferencia: " + e.getMessage());
+            System.err.println("Error en la transferencia: " + e.getMessage());
         } catch (Exception e) {
-            System.out.println("Error inesperado: " + e.getMessage());
+            System.err.println("Error inesperado: " + e.getMessage());
         } finally {
             System.out.println("Operación de transferencia finalizada.");
         }
