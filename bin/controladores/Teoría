@@ -1,0 +1,14 @@
+/* PREGUNTAS A RESPONDER EN ESTE ARCHIVO
+ * 1 ¿Por qué el orden de los catch en main es importante?
+ 	Porque se irán ejecutando en orden descendente, es decir, si tenemos un catch de error genérico por encima de uno específico, este se lanzará primero.
+ 	
+ * 2 ¿Qué problema había en catch (Exception e) dentro de procesarTransferencia?
+ 	No existe un catch (Excepcion e) dentro de procesarTransferencia.
+ 
+ * 3 ¿Cómo soluciona try-with-resources el problema de NullPointerException en el cierre del archivo?
+ 	Siempre va a haber un archivo llamado transferencias.log, por lo que apuntará siempre al archivo y no ocurrirá la NullPointerException
+ 
+ * 4 ¿Por qué no debemos lanzar excepciones dentro de finally?
+ 	Porque finally se ejecuta siempre, no tiene que cumplirse ninguna condición para ello. Eso causaría que se ejecute siempre dicha excepción.
+ 	
+ * */

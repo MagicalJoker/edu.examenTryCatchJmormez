@@ -1,0 +1,6 @@
+
+1.-
+	Líneas 26-27 del servicio TransferenciaServicio.java: 
+		Se captura una excepción y se lanza otra diferente. 
+		
+		
